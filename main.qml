@@ -22,6 +22,22 @@ Window {
         color: "red"
     }
 
+
+    MediaPlayer {
+            id: mediaPlayer
+            autoPlay: true
+            autoLoad: true
+//            source:"/home/macos/Desktop/FroggerHighway.mp4"
+            source: "qrc:/testVideo2.mp4"
+
+        }
+
+        VideoOutput {
+            id:videoOutput
+            source:mediaPlayer
+            anchors.fill: parent
+        }
+
     Video {
         id: video
         width : 800
@@ -30,7 +46,8 @@ Window {
             left:rect.left
         }
 
-        source: "/home/reach/Projects/SamplePOC/testVideo.mp4"
+        //source: "/home/reach/Projects/SamplePOC/testVideo.mp4"
+        source: "qrc:/testVideo2.mp4"
 
         MouseArea {
             anchors.fill: parent
@@ -45,7 +62,9 @@ Window {
         Keys.onRightPressed: video.seek(video.position + 5000)
         Component.onCompleted: {
             console.log("IIIIIIIIIIIIIII",this.status)
-            video.play();
+            //video.play();
+
         }
     }
+
 }

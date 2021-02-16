@@ -3,5 +3,7 @@
         <file>main.qml</file>
         <file>testVideo.mp4</file>
         <file>testVideo2.mp4</file>
+        <file>testVideo3.mp4</file>
+        <file>testVideo4.mp4</file>
     </qresource>
 </RCC>

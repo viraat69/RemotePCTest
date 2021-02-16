@@ -19,7 +19,7 @@ Window {
         height: 150
         x:15
         y:15
-        color: "red"
+        color: "white"
     }
 
 
@@ -38,7 +38,7 @@ Window {
             anchors.fill: parent
         }
 
-    Video {
+   /* Video {
         id: video
         width : 800
         height : 600
@@ -47,7 +47,7 @@ Window {
         }
 
         //source: "/home/reach/Projects/SamplePOC/testVideo.mp4"
-        source: "qrc:/testVideo2.mp4"
+        source: "qrc:/testVideo.mp4"
 
         MouseArea {
             anchors.fill: parent
@@ -65,6 +65,6 @@ Window {
             //video.play();
 
         }
-    }
+    }*/
 
 }
